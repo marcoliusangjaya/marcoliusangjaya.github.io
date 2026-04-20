@@ -866,6 +866,22 @@ footer {
   /* Misc */
   .hero-cta { flex-direction: column; align-items: flex-start; }
   .contact-btns { flex-direction: column; align-items: center; }
+
+  /* Larger fonts on mobile */
+  .hero-statement { font-size: 1.08rem; }
+  .bio { font-size: 1rem; }
+  .tl-role { font-size: .76rem; }
+  .tl-when { font-size: .7rem; }
+  .tl-desc { font-size: .95rem; }
+  .card-co { font-size: .68rem; }
+  .card-desc { font-size: .93rem; }
+  .mk { font-size: .65rem; }
+  .cs-text { font-size: 1rem; }
+  .cs-step-body { font-size: 1rem; }
+  .cs-intro { font-size: 1.05rem; }
+  .cs-meta { font-size: .72rem; }
+  .contact-sub { font-size: .74rem; }
+  .stat-label { font-size: .64rem; }
 }
 
 @media (max-width: 480px) {
