@@ -110,7 +110,9 @@ nav {
   backdrop-filter: blur(16px);
   background: rgba(7,7,9,0.6);
   border-bottom: 1px solid var(--border);
+  transition: transform .35s ease;
 }
+nav.nav-scrolled { transform: translateY(-100%); }
 
 .nav-logo {
   font-family: var(--mono);
@@ -222,7 +224,7 @@ section, .stats, .about, .projects, .contact, footer { position: relative; z-ind
 .hero-name .accent { color: var(--accent); }
 
 .hero-statement {
-  font-size: clamp(.88rem, 1.5vw, 1.2rem);
+  font-size: clamp(.96rem, 1.6vw, 1.25rem);
   color: var(--muted2);
   max-width: 580px;
   line-height: 1.75;
@@ -356,7 +358,7 @@ section, .stats, .about, .projects, .contact, footer { position: relative; z-ind
 }
 
 .bio {
-  font-size: clamp(.8rem, 1.2vw, .88rem);
+  font-size: clamp(.9rem, 1.4vw, 1rem);
   color: var(--muted2);
   line-height: 1.9;
   font-weight: 300;
@@ -377,9 +379,9 @@ section, .stats, .about, .projects, .contact, footer { position: relative; z-ind
 .tl-item:last-child .tl-line { display: none; }
 .tl-body { padding-bottom: 1.8rem; }
 .tl-co { font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: .15rem; }
-.tl-role { font-family: var(--mono); font-size: .62rem; color: var(--accent); letter-spacing: .1em; margin-bottom: .18rem; }
-.tl-when { font-family: var(--mono); font-size: .58rem; color: var(--muted); letter-spacing: .1em; margin-bottom: .45rem; }
-.tl-desc { font-size: .76rem; color: var(--muted2); line-height: 1.7; font-weight: 300; }
+.tl-role { font-family: var(--mono); font-size: .68rem; color: var(--accent); letter-spacing: .1em; margin-bottom: .18rem; }
+.tl-when { font-family: var(--mono); font-size: .64rem; color: var(--muted); letter-spacing: .1em; margin-bottom: .45rem; }
+.tl-desc { font-size: .86rem; color: var(--muted2); line-height: 1.7; font-weight: 300; }
 
 /* ================================================================
    PROJECTS / CARDS
@@ -427,13 +429,13 @@ section, .stats, .about, .projects, .contact, footer { position: relative; z-ind
 
 .card-body { padding: 1.6rem; flex: 1; display: flex; flex-direction: column; }
 .card-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: .85rem; flex-wrap: wrap; gap: .4rem; }
-.card-co { font-family: var(--mono); font-size: .56rem; letter-spacing: .18em; color: var(--accent); text-transform: uppercase; }
-.card-pill { font-family: var(--mono); font-size: .52rem; letter-spacing: .1em; color: var(--muted); border: 1px solid var(--border); padding: .18rem .55rem; border-radius: 2px; text-transform: uppercase; }
-.card-title { font-size: 1rem; font-weight: 700; letter-spacing: -.01em; margin-bottom: .7rem; line-height: 1.25; color: var(--text); }
-.card-desc { font-size: .76rem; color: var(--muted2); line-height: 1.75; margin-bottom: 1.2rem; font-weight: 300; }
+.card-co { font-family: var(--mono); font-size: .62rem; letter-spacing: .18em; color: var(--accent); text-transform: uppercase; }
+.card-pill { font-family: var(--mono); font-size: .58rem; letter-spacing: .1em; color: var(--muted); border: 1px solid var(--border); padding: .18rem .55rem; border-radius: 2px; text-transform: uppercase; }
+.card-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -.01em; margin-bottom: .7rem; line-height: 1.25; color: var(--text); }
+.card-desc { font-size: .86rem; color: var(--muted2); line-height: 1.75; margin-bottom: 1.2rem; font-weight: 300; }
 .card-metrics { display: flex; gap: 1.2rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid var(--border); margin-bottom: 1.2rem; }
-.mv { font-family: var(--font); font-size: 1.05rem; font-weight: 900; color: var(--accent); display: block; line-height: 1; letter-spacing: -.01em; }
-.mk { font-family: var(--mono); font-size: .52rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-top: .2rem; }
+.mv { font-family: var(--font); font-size: 1.1rem; font-weight: 900; color: var(--accent); display: block; line-height: 1; letter-spacing: -.01em; }
+.mk { font-family: var(--mono); font-size: .59rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-top: .2rem; }
 
 .card-cta {
   font-family: var(--mono);
@@ -564,7 +566,7 @@ footer {
 }
 
 .cs-intro {
-  font-size: clamp(.85rem, 1.5vw, 1rem);
+  font-size: clamp(.95rem, 1.7vw, 1.1rem);
   color: var(--muted2);
   max-width: 620px;
   line-height: 1.75;
@@ -608,7 +610,7 @@ footer {
 }
 
 .cs-text {
-  font-size: clamp(.82rem, 1.3vw, .92rem);
+  font-size: clamp(.92rem, 1.5vw, 1.02rem);
   color: var(--muted2);
   line-height: 1.9;
   font-weight: 300;
@@ -627,7 +629,7 @@ footer {
   padding-top: .22rem;
 }
 .cs-step-body {
-  font-size: clamp(.82rem, 1.3vw, .9rem);
+  font-size: clamp(.92rem, 1.5vw, 1rem);
   color: var(--muted2);
   line-height: 1.82;
   font-weight: 300;

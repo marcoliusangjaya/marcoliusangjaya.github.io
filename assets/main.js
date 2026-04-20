@@ -98,6 +98,18 @@ if (!isTouch) {
 }
 
 /* ================================================================
+   NAV AUTO-HIDE ON MOBILE SCROLL
+   ================================================================ */
+
+const navEl = document.querySelector('nav');
+if (navEl) {
+  window.addEventListener('scroll', () => {
+    if (!window.matchMedia('(max-width: 768px)').matches) return;
+    navEl.classList.toggle('nav-scrolled', window.scrollY > 60);
+  }, { passive: true });
+}
+
+/* ================================================================
    HAMBURGER MENU
    ================================================================ */
 
@@ -109,6 +121,7 @@ if (hamburger && navLinks) {
     const open = hamburger.classList.toggle('open');
     navLinks.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
+    if (open && navEl) navEl.classList.remove('nav-scrolled');
   });
 
   navLinks.querySelectorAll('a').forEach(a => {
