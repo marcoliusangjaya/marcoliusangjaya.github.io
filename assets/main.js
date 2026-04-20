@@ -121,13 +121,17 @@ if (hamburger && navLinks) {
     const open = hamburger.classList.toggle('open');
     navLinks.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
-    if (open && navEl) navEl.classList.remove('nav-scrolled');
+    if (navEl) {
+      navEl.classList.toggle('nav-open', open);
+      if (open) navEl.classList.remove('nav-scrolled');
+    }
   });
 
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       hamburger.classList.remove('open');
       navLinks.classList.remove('open');
+      if (navEl) navEl.classList.remove('nav-open');
       document.body.style.overflow = '';
     });
   });
@@ -171,3 +175,35 @@ const counterObs = new IntersectionObserver(entries => {
   });
 }, { threshold: .3 });
 document.querySelectorAll('.stat').forEach(el => counterObs.observe(el));
+
+/* ================================================================
+   RESUME MODAL
+   ================================================================ */
+
+const resumeModal = document.getElementById('resume-modal');
+const resumeBtn   = document.getElementById('resume-btn');
+const resumeClose = document.getElementById('resume-modal-close');
+const resumeFrame = document.getElementById('resume-frame');
+
+function openResume() {
+  if (!resumeModal) return;
+  if (resumeFrame && !resumeFrame.src) resumeFrame.src = 'assets/resume.pdf';
+  resumeModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeResume() {
+  if (!resumeModal) return;
+  resumeModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+if (resumeBtn)   resumeBtn.addEventListener('click', openResume);
+if (resumeClose) resumeClose.addEventListener('click', closeResume);
+if (resumeModal) {
+  resumeModal.addEventListener('click', e => {
+    if (e.target === resumeModal) closeResume();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeResume();
+  });
+}

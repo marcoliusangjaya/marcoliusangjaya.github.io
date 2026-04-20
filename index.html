@@ -359,12 +359,28 @@
   <div class="contact-btns reveal d3">
     <a href="https://www.linkedin.com/in/marcoliusangjaya/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
     <a href="mailto:marcoliusangjaya@gmail.com" class="btn btn-ghost">Email Me</a>
-    <a href="assets/resume.pdf" download="Marcolius_Angjaya_Resume.pdf" class="btn btn-ghost">Download Resume</a>
+    <button class="btn btn-ghost" id="resume-btn">View Resume</button>
   </div>
   <div class="contact-email reveal d4">
     <a href="mailto:marcoliusangjaya@gmail.com">marcoliusangjaya@gmail.com</a>
   </div>
 </section>
+
+<!-- RESUME MODAL -->
+<div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-label="Resume viewer">
+  <div class="resume-modal-inner">
+    <div class="resume-modal-header">
+      <span class="resume-modal-title">Resume</span>
+      <div class="resume-modal-actions">
+        <a href="assets/resume.pdf" download="Marcolius_Angjaya_Resume.pdf" class="btn btn-primary resume-dl-btn">Download PDF</a>
+        <button class="resume-modal-close" id="resume-modal-close" aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="resume-modal-body">
+      <iframe id="resume-frame" title="Resume"></iframe>
+    </div>
+  </div>
+</div>
 
 <footer>
   <span class="ft">© 2025 Marcolius Angjaya</span>

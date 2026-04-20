@@ -704,6 +704,107 @@ footer {
 .cs-back:hover { color: var(--accent); gap: .9rem; }
 
 /* ================================================================
+   RESUME MODAL
+   ================================================================ */
+
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: rgba(7,7,9,0.88);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+.resume-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.resume-modal-inner {
+  width: 100%;
+  max-width: 820px;
+  height: min(90vh, 1000px);
+  background: var(--surface);
+  border: 1px solid var(--border-accent);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform .35s ease;
+}
+.resume-modal.open .resume-modal-inner {
+  transform: translateY(0);
+}
+
+.resume-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .9rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: 1rem;
+}
+.resume-modal-title {
+  font-family: var(--mono);
+  font-size: .64rem;
+  letter-spacing: .2em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.resume-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.resume-dl-btn {
+  font-size: .6rem !important;
+  padding: .55rem 1.2rem !important;
+  min-height: 36px !important;
+}
+.resume-modal-close {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted2);
+  font-size: .9rem;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .2s, border-color .2s;
+  flex-shrink: 0;
+}
+.resume-modal-close:hover { color: var(--accent); border-color: var(--accent); }
+
+.resume-modal-body {
+  flex: 1;
+  overflow: hidden;
+}
+.resume-modal-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Mobile: stack header actions */
+@media (max-width: 480px) {
+  .resume-modal-inner { height: 92vh; border-radius: 10px; }
+  .resume-modal { padding: .5rem; }
+}
+
+/* ================================================================
    RESPONSIVE
    ================================================================ */
 
@@ -712,6 +813,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Nav: gradient fade instead of blur bar */
+  nav {
+    background: linear-gradient(to bottom, rgba(7,7,9,0.98) 30%, rgba(7,7,9,0));
+    backdrop-filter: none;
+    border-bottom: none;
+  }
+  nav.nav-open {
+    background: transparent;
+    border-bottom: none;
+  }
+
   /* Hamburger nav */
   .nav-hamburger { display: flex; }
   .nav-links {
