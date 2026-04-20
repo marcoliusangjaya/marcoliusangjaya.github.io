@@ -157,7 +157,8 @@ function animCount(el, target, suffix) {
     if (!start) start = ts;
     const p = Math.min((ts - start) / dur, 1);
     const e = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.floor(e * target) + (p === 1 ? suffix : '');
+    const val = Math.min(Math.round(e * target), target);
+    el.textContent = val + (val >= target ? suffix : '');
     if (p < 1) requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
