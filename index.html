@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcolius Angjaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Schibsted+Grotesk:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<canvas id="grid-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <a href="#" class="nav-logo">MA</a>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Robotics · Automation · Data Systems</div>
+    <h1 class="hero-name">Marcolius<br><span class="accent">Angjaya.</span></h1>
+    <p class="hero-statement">I don't just find what's broken. I understand the <strong>operational advantage</strong> — then I build the solution.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Case Studies</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div>Scroll to explore</div>
+</section>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="stat"><span class="stat-num" data-target="3" data-suffix=" yrs">0</span><span class="stat-label">Industry Experience</span></div>
+  <div class="stat"><span class="stat-num" data-target="200" data-suffix="+">0</span><span class="stat-label">Internal Tool Users</span></div>
+  <div class="stat"><span class="stat-num" data-target="50" data-suffix="+">0</span><span class="stat-label">AGVs Deployed</span></div>
+  <div class="stat"><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label">Enterprise Clients</span></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <div class="eyebrow reveal">About</div>
+    <h2 class="section-heading reveal d1">Engineer by training.<br>Problem solver by instinct.</h2>
+    <p class="bio reveal d2">I'm a <strong>Georgia Tech aerospace engineer</strong> who found his edge at the intersection of robotics, data, and operations. I move between the warehouse floor and the data pipeline — between physical hardware and the systems that run it.</p>
+    <p class="bio reveal d3">My edge is <strong>systems thinking</strong>. Whether it's airflow over an aero component or AGV traffic through a fulfillment center — the logic is the same: find the bottleneck, understand the advantage, build the fix, measure it.</p>
+  </div>
+  <div class="reveal d2">
+    <div class="eyebrow" style="margin-bottom:1.5rem">Experience</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot on"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Amazon Robotics</div>
+          <div class="tl-role">Product Launch Engineer</div>
+          <div class="tl-when">Jul 2025 – Present · Shreveport, LA</div>
+          <div class="tl-desc">Real-time station health tooling, Python diagnostics, A/B testing, and cross-functional ops support across 4 ToteASRS fulfillment sites.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot on"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">VisionNav Robotics</div>
+          <div class="tl-role">Project Engineer II</div>
+          <div class="tl-when">Apr 2024 – Jul 2025 · Atlanta, GA</div>
+          <div class="tl-desc">End-to-end AGV deployment for 10+ enterprise accounts. Route optimization via SQL &amp; REST APIs, WMS integration, customer onboarding.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Birla Carbon</div>
+          <div class="tl-role">Product Design &amp; Development Intern</div>
+          <div class="tl-when">May – Aug 2023 · Atlanta, GA</div>
+          <div class="tl-desc">Drove 400% improvement in sustainable carbon black material performance through root cause analysis and NPI collaboration.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Birla Carbon</div>
+          <div class="tl-role">Research Engineer Intern</div>
+          <div class="tl-when">May – Aug 2022 · Atlanta, GA</div>
+          <div class="tl-desc">Built a performance database across 20+ carbon black products. Analyzed hundreds of tests to identify strategic R&amp;D opportunities.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Georgia Tech – ASDL</div>
+          <div class="tl-role">Junior Researcher</div>
+          <div class="tl-when">Jan – May 2022 · Atlanta, GA</div>
+          <div class="tl-desc">Supported zero-prototyping digital twin methodology for Toyota Gazoo Racing GT4. Validated real-world vehicle data against simulation outputs.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Hytech Racing · Georgia Tech</div>
+          <div class="tl-role">Aerodynamics — Formula Student</div>
+          <div class="tl-when">2021 – 2023 · Atlanta, GA</div>
+          <div class="tl-desc">Designed and CFD-validated aero components. Produced final 3D-printed hardware — concept to physical part on a competition racecar.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <div class="tl-co">Georgia Institute of Technology</div>
+          <div class="tl-role">BS Aerospace Engineering — Magna Cum Laude</div>
+          <div class="tl-when">Aug 2021 – Dec 2023 · GPA 3.53</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="proj-hdr">
+    <div class="eyebrow reveal">Case Studies</div>
+    <h2 class="proj-heading reveal d1">Problems solved.<br>Results measured.</h2>
+  </div>
+  <div class="cards">
+
+    <!-- Card 1: Station Health -->
+    <div class="card reveal d1">
+      <div class="card-gfx">
+        <svg width="100%" height="130" viewBox="0 0 460 130" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <rect width="460" height="130" fill="#0b0b10"/>
+          <line x1="0" y1="32" x2="460" y2="32" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <line x1="0" y1="65" x2="460" y2="65" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <line x1="0" y1="98" x2="460" y2="98" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <line x1="115" y1="0" x2="115" y2="130" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <line x1="230" y1="0" x2="230" y2="130" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <line x1="345" y1="0" x2="345" y2="130" stroke="rgba(0,229,255,0.03)" stroke-width="0.5"/>
+          <rect x="12" y="42" width="72" height="46" rx="4" fill="#111118" stroke="rgba(255,120,60,0.5)" stroke-width="1"/>
+          <text x="48" y="61" fill="rgba(255,140,80,0.85)" font-size="7" font-family="monospace" text-anchor="middle">STATION</text>
+          <text x="48" y="73" fill="rgba(255,140,80,0.6)" font-size="6" font-family="monospace" text-anchor="middle">DOWN</text>
+          <circle cx="48" cy="83" r="3" fill="rgba(255,120,60,0.15)" stroke="rgba(255,120,60,0.8)" stroke-width="1">
+            <animate attributeName="r" values="2;5;2" dur="1.2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>
+          </circle>
+          <line x1="84" y1="65" x2="110" y2="65" stroke="rgba(0,229,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+          <circle r="2" fill="rgba(0,229,255,0.85)"><animateMotion dur="1.5s" repeatCount="indefinite" path="M84,65 L110,65"/></circle>
+          <polygon points="108,61 116,65 108,69" fill="rgba(0,229,255,0.35)"/>
+          <rect x="117" y="30" width="92" height="70" rx="4" fill="#111118" stroke="rgba(0,229,255,0.45)" stroke-width="1.2"/>
+          <text x="163" y="54" fill="rgba(0,229,255,0.85)" font-size="7" font-family="monospace" text-anchor="middle">BACKEND</text>
+          <text x="163" y="65" fill="rgba(0,229,255,0.5)" font-size="5.5" font-family="monospace" text-anchor="middle">ENGINE</text>
+          <rect x="129" y="72" width="28" height="12" rx="2" fill="rgba(0,229,255,0.07)" stroke="rgba(0,229,255,0.22)" stroke-width="0.8"/>
+          <text x="143" y="81" fill="rgba(0,229,255,0.55)" font-size="5" font-family="monospace" text-anchor="middle">ALERTS</text>
+          <rect x="161" y="72" width="36" height="12" rx="2" fill="rgba(0,229,255,0.07)" stroke="rgba(0,229,255,0.22)" stroke-width="0.8"/>
+          <text x="179" y="81" fill="rgba(0,229,255,0.55)" font-size="5" font-family="monospace" text-anchor="middle">TICKETS</text>
+          <line x1="209" y1="65" x2="235" y2="65" stroke="rgba(0,229,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+          <circle r="2" fill="rgba(0,229,255,0.85)"><animateMotion dur="1.5s" repeatCount="indefinite" begin=".4s" path="M209,65 L235,65"/></circle>
+          <polygon points="233,61 241,65 233,69" fill="rgba(0,229,255,0.35)"/>
+          <rect x="242" y="30" width="86" height="70" rx="4" fill="#111118" stroke="rgba(0,229,255,0.4)" stroke-width="1.2"/>
+          <text x="285" y="50" fill="rgba(0,229,255,0.85)" font-size="7" font-family="monospace" text-anchor="middle">DASHBOARD</text>
+          <rect x="252" y="56" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="264" y="56" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="276" y="56" width="9" height="9" rx="1" fill="rgba(255,120,60,0.22)" stroke="rgba(255,120,60,0.55)" stroke-width="0.6"><animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/></rect>
+          <rect x="288" y="56" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="300" y="56" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="312" y="56" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="252" y="68" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="264" y="68" width="9" height="9" rx="1" fill="rgba(255,120,60,0.22)" stroke="rgba(255,120,60,0.55)" stroke-width="0.6"><animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite" begin=".3s"/></rect>
+          <rect x="276" y="68" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="288" y="68" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="300" y="68" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="312" y="68" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="252" y="80" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="264" y="80" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="276" y="80" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="288" y="80" width="9" height="9" rx="1" fill="rgba(255,120,60,0.22)" stroke="rgba(255,120,60,0.55)" stroke-width="0.6"><animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite" begin=".7s"/></rect>
+          <rect x="300" y="80" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <rect x="312" y="80" width="9" height="9" rx="1" fill="rgba(0,229,255,0.18)" stroke="rgba(0,229,255,0.35)" stroke-width="0.6"/>
+          <line x1="328" y1="65" x2="352" y2="65" stroke="rgba(0,229,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+          <circle r="2" fill="rgba(0,229,255,0.85)"><animateMotion dur="1.5s" repeatCount="indefinite" begin=".8s" path="M328,65 L352,65"/></circle>
+          <polygon points="350,61 358,65 350,69" fill="rgba(0,229,255,0.35)"/>
+          <rect x="359" y="42" width="72" height="46" rx="4" fill="#111118" stroke="rgba(0,229,255,0.35)" stroke-width="1"/>
+          <text x="395" y="60" fill="rgba(0,229,255,0.8)" font-size="7" font-family="monospace" text-anchor="middle">TEAM</text>
+          <text x="395" y="71" fill="rgba(0,229,255,0.55)" font-size="6" font-family="monospace" text-anchor="middle">ALERTED</text>
+          <text x="395" y="82" fill="rgba(100,255,150,0.7)" font-size="6.5" font-family="monospace" text-anchor="middle">→ FIX</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-co">Amazon Robotics</span><span class="card-pill">Internal Tool</span></div>
+        <h3 class="card-title">Station Health Visibility Platform</h3>
+        <p class="card-desc">Operations had no real-time view of station health across 4 fulfillment sites. Built a Tampermonkey overlay backed by SharePoint and Power Automate — unhealthy stations alert ops and RME instantly.</p>
+        <div class="card-metrics">
+          <div><span class="mv">200+</span><span class="mk">Daily users</span></div>
+          <div><span class="mv">1,000</span><span class="mk">Stations tracked</span></div>
+          <div><span class="mv">4</span><span class="mk">Sites live</span></div>
+        </div>
+        <a href="case-studies/station-health.html" class="card-cta">Read case study →</a>
+      </div>
+    </div>
+
+    <!-- Card 2: Python Diagnostics -->
+    <div class="card reveal d2">
+      <div class="card-gfx">
+        <svg width="100%" height="130" viewBox="0 0 460 130" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <rect width="460" height="130" fill="#0b0b10"/>
+          <line x1="40" y1="115" x2="430" y2="115" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+          <line x1="40" y1="20" x2="40" y2="115" stroke="rgba(0,229,255,0.1)" stroke-width="0.5"/>
+          <line x1="40" y1="48" x2="430" y2="48" stroke="rgba(0,229,255,0.04)" stroke-width="0.5" stroke-dasharray="3,4"/>
+          <line x1="40" y1="75" x2="430" y2="75" stroke="rgba(0,229,255,0.04)" stroke-width="0.5" stroke-dasharray="3,4"/>
+          <line x1="40" y1="98" x2="430" y2="98" stroke="rgba(0,229,255,0.04)" stroke-width="0.5" stroke-dasharray="3,4"/>
+          <polyline points="40,38 90,40 140,42 185,44 215,82 240,86 260,84 285,58 320,40 370,36 430,33" fill="none" stroke="rgba(0,229,255,0.65)" stroke-width="1.5"/>
+          <polygon points="40,38 90,40 140,42 185,44 215,82 240,86 260,84 285,58 320,40 370,36 430,33 430,115 40,115" fill="rgba(0,229,255,0.04)"/>
+          <rect x="185" y="20" width="75" height="95" fill="rgba(255,80,60,0.04)"/>
+          <line x1="185" y1="20" x2="185" y2="115" stroke="rgba(255,80,60,0.25)" stroke-width="1" stroke-dasharray="3,3"/>
+          <line x1="260" y1="20" x2="260" y2="115" stroke="rgba(0,229,255,0.2)" stroke-width="1" stroke-dasharray="3,3"/>
+          <rect x="168" y="10" width="60" height="14" rx="2" fill="rgba(255,80,60,0.1)" stroke="rgba(255,80,60,0.3)" stroke-width="0.8"/>
+          <text x="198" y="20" fill="rgba(255,110,90,0.85)" font-size="6" font-family="monospace" text-anchor="middle">-5% DETECTED</text>
+          <rect x="244" y="10" width="54" height="14" rx="2" fill="rgba(0,229,255,0.07)" stroke="rgba(0,229,255,0.25)" stroke-width="0.8"/>
+          <text x="271" y="20" fill="rgba(0,229,255,0.75)" font-size="6" font-family="monospace" text-anchor="middle">RESOLVED</text>
+          <text x="40" y="125" fill="rgba(0,229,255,0.25)" font-size="6" font-family="monospace">W1</text>
+          <text x="178" y="125" fill="rgba(255,110,90,0.5)" font-size="6" font-family="monospace">W7</text>
+          <text x="252" y="125" fill="rgba(0,229,255,0.5)" font-size="6" font-family="monospace">W10</text>
+          <text x="415" y="125" fill="rgba(0,229,255,0.25)" font-size="6" font-family="monospace">W16</text>
+          <text x="433" y="37" fill="rgba(0,229,255,0.35)" font-size="5.5" font-family="monospace">UPH</text>
+          <rect x="340" y="85" width="82" height="24" rx="3" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)" stroke-width="0.8"/>
+          <text x="381" y="97" fill="rgba(0,229,255,0.85)" font-size="6.5" font-family="monospace" text-anchor="middle">5h → 30min</text>
+          <text x="381" y="106" fill="rgba(0,229,255,0.45)" font-size="5" font-family="monospace" text-anchor="middle">DATA PIPELINE</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-co">Amazon Robotics</span><span class="card-pill">Python · Data</span></div>
+        <h3 class="card-title">Performance Diagnostics &amp; Recovery</h3>
+        <p class="card-desc">Caught a 5% performance decline before any standard dashboard flagged it. Built Python diagnostics cutting weekly data extraction from 5 hours to 30 minutes — recovering 2 UPH loss within 3 weeks.</p>
+        <div class="card-metrics">
+          <div><span class="mv">5h→30m</span><span class="mk">Extraction time</span></div>
+          <div><span class="mv">2 UPH</span><span class="mk">Recovered</span></div>
+          <div><span class="mv">3 wks</span><span class="mk">Time to fix</span></div>
+        </div>
+        <a href="case-studies/python-diagnostics.html" class="card-cta">Read case study →</a>
+      </div>
+    </div>
+
+    <!-- Card 3: AGV Optimization -->
+    <div class="card reveal d3">
+      <div class="card-gfx">
+        <svg width="100%" height="130" viewBox="0 0 460 130" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <rect width="460" height="130" fill="#0b0b10"/>
+          <line x1="20" y1="20" x2="440" y2="20" stroke="rgba(0,229,255,0.06)" stroke-width="0.5"/>
+          <line x1="20" y1="110" x2="440" y2="110" stroke="rgba(0,229,255,0.06)" stroke-width="0.5"/>
+          <line x1="20" y1="20" x2="20" y2="110" stroke="rgba(0,229,255,0.06)" stroke-width="0.5"/>
+          <line x1="440" y1="20" x2="440" y2="110" stroke="rgba(0,229,255,0.06)" stroke-width="0.5"/>
+          <rect x="30" y="25" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="30" y="42" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="30" y="75" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="30" y="92" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="200" y="25" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="200" y="42" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="200" y="75" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="200" y="92" width="60" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="370" y="25" width="55" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="370" y="42" width="55" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="370" y="75" width="55" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <rect x="370" y="92" width="55" height="12" rx="1" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="0.8"/>
+          <circle cx="110" cy="65" r="5" fill="#0b0b10" stroke="rgba(0,229,255,0.5)" stroke-width="1"/>
+          <text x="110" y="68.5" fill="rgba(0,229,255,0.8)" font-size="6" font-family="monospace" text-anchor="middle">A</text>
+          <circle cx="360" cy="65" r="5" fill="#0b0b10" stroke="rgba(0,229,255,0.5)" stroke-width="1"/>
+          <text x="360" y="68.5" fill="rgba(0,229,255,0.8)" font-size="6" font-family="monospace" text-anchor="middle">B</text>
+          <polyline points="115,65 140,35 175,35 175,65 200,65 200,35 265,35 265,65 290,65 290,95 330,95 330,65 355,65" fill="none" stroke="rgba(255,90,60,0.55)" stroke-width="1.2" stroke-dasharray="5,3"/>
+          <circle cx="200" cy="35" r="4" fill="rgba(255,80,60,0.12)" stroke="rgba(255,80,60,0.55)" stroke-width="0.8"><animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/></circle>
+          <circle cx="290" cy="65" r="4" fill="rgba(255,80,60,0.12)" stroke="rgba(255,80,60,0.55)" stroke-width="0.8"><animate attributeName="opacity" values="1;0.3;1" dur="1.3s" repeatCount="indefinite" begin=".3s"/></circle>
+          <path d="M115,65 C150,65 160,80 185,83 C210,86 265,86 290,83 C315,80 335,65 355,65" fill="none" stroke="rgba(0,229,255,0.7)" stroke-width="1.5"/>
+          <g>
+            <rect x="-7" y="-5" width="14" height="10" rx="2" fill="#111118" stroke="rgba(0,229,255,0.8)" stroke-width="1"/>
+            <rect x="7" y="-2" width="5" height="4" rx="0.5" fill="rgba(0,229,255,0.15)" stroke="rgba(0,229,255,0.5)" stroke-width="0.7"/>
+            <circle cx="-4" cy="-5" r="1.5" fill="none" stroke="rgba(0,229,255,0.4)" stroke-width="0.7"/>
+            <circle cx="4" cy="-5" r="1.5" fill="none" stroke="rgba(0,229,255,0.4)" stroke-width="0.7"/>
+            <circle cx="-4" cy="5" r="1.5" fill="none" stroke="rgba(0,229,255,0.4)" stroke-width="0.7"/>
+            <circle cx="4" cy="5" r="1.5" fill="none" stroke="rgba(0,229,255,0.4)" stroke-width="0.7"/>
+            <circle cx="10" cy="0" r="1" fill="rgba(0,229,255,0.9)"><animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/></circle>
+            <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" path="M115,65 C150,65 160,80 185,83 C210,86 265,86 290,83 C315,80 335,65 355,65"/>
+          </g>
+          <text x="232" y="28" fill="rgba(255,90,60,0.5)" font-size="6" font-family="monospace" text-anchor="middle">BEFORE</text>
+          <text x="232" y="100" fill="rgba(0,229,255,0.5)" font-size="6" font-family="monospace" text-anchor="middle">OPTIMIZED</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-co">VisionNav Robotics</span><span class="card-pill">AGV · SQL · APIs</span></div>
+        <h3 class="card-title">AGV Fleet Optimization &amp; WMS Integration</h3>
+        <p class="card-desc">Forklift AGVs running inefficient, conflicting routes inside customer warehouses. Used SQL and REST APIs to optimize paths, cut conflicts, and integrate seamlessly with existing WMS systems.</p>
+        <div class="card-metrics">
+          <div><span class="mv">50+</span><span class="mk">AGVs deployed</span></div>
+          <div><span class="mv">10+</span><span class="mk">Enterprise clients</span></div>
+          <div><span class="mv">98%</span><span class="mk">Satisfaction rate</span></div>
+        </div>
+        <a href="case-studies/agv-optimization.html" class="card-cta">Read case study →</a>
+      </div>
+    </div>
+
+    <!-- Card 4: CFD + Aero -->
+    <div class="card reveal d4">
+      <div class="card-gfx">
+        <svg width="100%" height="130" viewBox="0 0 460 130" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <rect width="460" height="130" fill="#0b0b10"/>
+          <line x1="0" y1="27" x2="50" y2="27" stroke="rgba(0,229,255,0.14)" stroke-width="0.85"/>
+          <line x1="0" y1="39" x2="50" y2="39" stroke="rgba(0,229,255,0.20)" stroke-width="0.95"/>
+          <line x1="0" y1="49" x2="50" y2="49" stroke="rgba(0,229,255,0.26)" stroke-width="1.0"/>
+          <line x1="0" y1="57" x2="50" y2="57" stroke="rgba(0,229,255,0.33)" stroke-width="1.1"/>
+          <line x1="0" y1="63" x2="50" y2="63" stroke="rgba(0,229,255,0.40)" stroke-width="1.15"/>
+          <line x1="0" y1="65" x2="50" y2="65" stroke="rgba(0,229,255,0.44)" stroke-width="1.2"/>
+          <line x1="0" y1="67" x2="50" y2="67" stroke="rgba(0,229,255,0.40)" stroke-width="1.15"/>
+          <line x1="0" y1="73" x2="50" y2="73" stroke="rgba(0,229,255,0.30)" stroke-width="1.05"/>
+          <line x1="0" y1="81" x2="50" y2="81" stroke="rgba(0,229,255,0.20)" stroke-width="0.9"/>
+          <line x1="0" y1="91" x2="50" y2="91" stroke="rgba(0,229,255,0.13)" stroke-width="0.8"/>
+          <path d="M 50.0,65.1 L 49.8,65.8 L 49.7,66.7 L 49.9,68.4 L 50.6,70.4 L 51.8,72.4 L 53.5,74.6 L 55.8,76.9 L 58.5,79.3 L 61.8,81.8 L 65.6,84.3 L 69.8,86.9 L 74.5,89.5 L 79.7,92.1 L 85.4,94.7 L 91.5,97.2 L 98.0,99.7 L 104.9,102.1 L 112.2,104.4 L 119.9,106.5 L 127.9,108.5 L 136.2,110.4 L 144.8,112.0 L 153.7,113.4 L 162.7,114.6 L 172.0,115.6 L 181.4,116.4 L 191.0,116.9 L 200.7,117.1 L 210.4,117.2 L 220.2,116.9 L 230.0,116.5 L 239.8,115.7 L 249.5,114.8 L 259.1,113.6 L 268.6,112.3 L 278.0,110.7 L 287.3,108.9 L 296.3,107.0 L 305.1,105.0 L 313.7,102.8 L 322.0,100.5 L 330.1,98.1 L 337.8,95.7 L 345.2,93.2 L 352.3,90.7 L 359.1,88.2 L 365.4,85.8 L 371.4,83.3 L 377.0,81.0 L 382.2,78.8 L 387.0,76.6 L 391.3,74.6 L 395.2,72.8 L 398.7,71.1 L 401.7,69.7 L 404.3,68.4 L 406.4,67.3 L 408.0,66.5 L 409.2,65.9 L 410.2,65.4 L 409.6,64.6 L 407.5,65.1 L 404.6,65.7 L 400.6,66.5 L 395.6,67.5 L 389.4,68.7 L 382.3,70.0 L 374.2,71.4 L 365.3,72.8 L 355.5,74.2 L 345.0,75.5 L 333.8,76.7 L 322.0,77.8 L 309.7,78.7 L 297.0,79.3 L 284.0,79.7 L 270.7,79.8 L 257.2,79.6 L 243.6,79.1 L 230.0,78.3 L 216.4,77.3 L 203.0,76.1 L 189.7,74.6 L 176.7,73.0 L 164.1,71.3 L 151.8,69.5 L 139.9,67.6 L 128.5,65.9 L 117.7,64.2 L 107.4,62.7 L 97.9,61.4 L 89.0,60.3 L 80.9,59.5 L 73.7,59.0 L 67.3,59.0 L 61.8,59.5 L 57.3,60.0 L 53.8,61.2 L 51.4,62.9 L 50.0,65.1 Z" fill="#111118" stroke="rgba(0,229,255,0.85)" stroke-width="1.2"/>
+          <path d="M0,27 C30,27 46,27 50,27 C68,21 104,25 140,30 C176,35 212,39 248,41 C284,42 320,40 356,36 C374,31.7 392,30 410,26.6 C435,24 455,23 460,23" fill="none" stroke="rgba(0,229,255,0.15)" stroke-width="0.85"/>
+          <path d="M0,39 C30,39 46,39 50,39 C68,33 104,37 140,42 C176,47 212,51 248,53 C284,54 320,52 356,48 C374,43.7 392,42 410,38.6 C435,36 455,35 460,35" fill="none" stroke="rgba(0,229,255,0.21)" stroke-width="0.95"/>
+          <path d="M0,49 C30,49 46,49 50,49 C68,43 104,47 140,52 C176,57 212,61 248,63 C284,64 320,62 356,58 C374,53.7 392,52 410,48.6 C435,46 455,45 460,45" fill="none" stroke="rgba(0,229,255,0.28)" stroke-width="1.0"/>
+          <path d="M0,57 C30,57 46,57 50,57 C68,51 104,55 140,60 C176,65 212,69 248,71 C284,72 320,70 356,66 C374,61.7 392,60 410,56.6 C435,54 455,53 460,53" fill="none" stroke="rgba(0,229,255,0.36)" stroke-width="1.1"/>
+          <path d="M0,63 C30,63 46,63 50,63 C68,57 104,61 140,66 C176,71 212,75 248,77 C284,78 320,76 356,72 C374,67.7 392,66 410,62.6 C435,60 455,59 460,59" fill="none" stroke="rgba(0,229,255,0.44)" stroke-width="1.2"/>
+          <path d="M0,67 C30,67 46,67 50,67 C68,85 104,102 140,112 C176,118 212,119 248,117 C284,111 320,103 356,91 C374,83.7 392,76 410,67.4 C435,67 455,67 460,67" fill="none" stroke="rgba(0,229,255,0.44)" stroke-width="1.2"/>
+          <path d="M0,73 C30,73 46,73 50,73 C68,91 104,108 140,118 C176,124 212,125 248,123 C284,117 320,109 356,97 C374,89.7 392,82 410,73.4 C435,73 455,72 460,72" fill="none" stroke="rgba(0,229,255,0.30)" stroke-width="1.05"/>
+          <path d="M0,81 C30,81 46,81 50,81 C68,99 104,116 140,126 C176,132 212,133 248,131 C284,125 320,117 356,105 C374,97.7 392,90 410,81.4 C435,81 455,80 460,80" fill="none" stroke="rgba(0,229,255,0.19)" stroke-width="0.9"/>
+          <circle r="2" fill="rgba(0,229,255,0.8)"><animateMotion dur="3.5s" repeatCount="indefinite" path="M0,57 C30,57 46,57 50,57 C68,51 104,55 140,60 C176,65 212,69 248,71 C284,72 320,70 356,66 C374,61.7 392,60 410,56.6 C435,54 455,53 460,53"/></circle>
+          <circle r="1.8" fill="rgba(0,229,255,0.55)"><animateMotion dur="3.5s" repeatCount="indefinite" begin="1.4s" path="M0,49 C30,49 46,49 50,49 C68,43 104,47 140,52 C176,57 212,61 248,63 C284,64 320,62 356,58 C374,53.7 392,52 410,48.6 C435,46 455,45 460,45"/></circle>
+          <circle r="2" fill="rgba(0,229,255,0.9)"><animateMotion dur="2.0s" repeatCount="indefinite" begin="0.2s" path="M0,67 C30,67 46,67 50,67 C68,85 104,102 140,112 C176,118 212,119 248,117 C284,111 320,103 356,91 C374,83.7 392,76 410,67.4 C435,67 455,67 460,67"/></circle>
+          <circle r="1.8" fill="rgba(0,229,255,0.7)"><animateMotion dur="2.0s" repeatCount="indefinite" begin="0.8s" path="M0,73 C30,73 46,73 50,73 C68,91 104,108 140,118 C176,124 212,125 248,123 C284,117 320,109 356,97 C374,89.7 392,82 410,73.4 C435,73 455,72 460,72"/></circle>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-co">Hytech Racing · Georgia Tech</span><span class="card-pill">CFD · CAD · Fabrication</span></div>
+        <h3 class="card-title">Aero Component Design, CFD &amp; Fabrication</h3>
+        <p class="card-desc">Designed and CFD-validated aerodynamic components for a Formula Student racecar. Pressure gradient analysis above and below the wing, geometry iteration, and 3D-printed final hardware.</p>
+        <div class="card-metrics">
+          <div><span class="mv">CFD</span><span class="mk">Validated</span></div>
+          <div><span class="mv">↑DF</span><span class="mk">Downforce</span></div>
+          <div><span class="mv">CAD→</span><span class="mk">Physical part</span></div>
+        </div>
+        <a href="case-studies/formula-student.html" class="card-cta">Read case study →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="eyebrow reveal" style="justify-content:center">Contact</div>
+  <h2 class="contact-heading reveal d1">Let's <span>talk.</span></h2>
+  <p class="contact-sub reveal d2">Open to opportunities in robotics, automation, and operations.</p>
+  <div class="contact-btns reveal d3">
+    <a href="https://www.linkedin.com/in/marcoliusangjaya/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
+    <a href="mailto:marcoliusangjaya@gmail.com" class="btn btn-ghost">Email Me</a>
+  </div>
+  <div class="contact-email reveal d4">
+    <a href="mailto:marcoliusangjaya@gmail.com">marcoliusangjaya@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  <span class="ft">© 2025 Marcolius Angjaya</span>
+  <span class="ft">Built with intent.</span>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

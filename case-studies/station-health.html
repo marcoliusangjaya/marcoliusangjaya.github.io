@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Station Health Visibility Platform — Marcolius Angjaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Schibsted+Grotesk:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<canvas id="grid-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <a href="/" class="nav-logo">MA</a>
+  <div class="nav-links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#projects">Work</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="cs-tag">Amazon Robotics · Internal Tool · 2025</div>
+  <h1 class="cs-title">Station Health Visibility Platform</h1>
+  <p class="cs-meta">Amazon Robotics &nbsp;·&nbsp; Product Launch Engineer &nbsp;·&nbsp; 2025</p>
+  <p class="cs-intro">How I went from zero real-time visibility into station health to a dashboard used by 200+ people across 4 fulfillment sites — built in 2 days with a browser extension and no access to internal systems.</p>
+</section>
+
+<!-- CONTENT -->
+<div class="cs-content">
+
+  <!-- SITUATION -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Situation</div>
+    <p class="cs-text">I joined Amazon Robotics as a Product Launch Engineer supporting 4 ToteASRS fulfillment sites. Each site runs hundreds of robot stations 24/7, and operations managers had <strong>no real-time visibility</strong> into which stations were healthy or degraded. The only way to check was manually — slow, error-prone, and reactive. By the time a problem was noticed, throughput had already been hit.</p>
+  </section>
+
+  <!-- TASK -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Task</div>
+    <p class="cs-text">Design and build a solution that gives operations and reliability teams <strong>instant visibility into station health</strong> across all sites, so they can make staffing and maintenance decisions before problems impact throughput.</p>
+  </section>
+
+  <!-- ACTION -->
+  <section class="cs-section reveal">
+    <div class="cs-label">What I Did</div>
+    <ol class="cs-steps">
+      <li class="cs-step">
+        <span class="cs-step-num">01</span>
+        <div class="cs-step-body"><strong>Researched the problem space.</strong> Spent 2 months exploring solutions, including a hardware approach using physical light switches. Ruled it out as too complex and slow to scale across hundreds of stations per site.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">02</span>
+        <div class="cs-step-body"><strong>Found the right lever.</strong> Discovered Tampermonkey, a browser extension that lets you inject custom overlays into existing web interfaces. This meant I could build on top of the existing ops dashboard without touching any internal systems or requiring deployment access.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">03</span>
+        <div class="cs-step-body"><strong>Built the MVP in 2 days.</strong> Built a working overlay that reads live station data and displays health status in real time directly inside the ops interface — color-coded, filterable, and zero training required.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">04</span>
+        <div class="cs-step-body"><strong>Connected the backend.</strong> Wired the tool to a SharePoint list via REST APIs. When a station goes unhealthy, it updates SharePoint, triggers a Power Automate flow, pushes a Slack alert to the floor health team, and surfaces it on the dashboard overlay.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">05</span>
+        <div class="cs-step-body"><strong>Rolled out across sites.</strong> Worked with Operations and RME teams to refine the tool based on real usage. It was formally adopted for station health reporting across all 4 ToteASRS sites.</div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- RESULT -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Result</div>
+    <div class="cs-stats">
+      <div class="cs-stat">
+        <span class="cs-stat-num">200+</span>
+        <span class="cs-stat-label">Daily Users</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">1,000+</span>
+        <span class="cs-stat-label">Stations Tracked</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">4</span>
+        <span class="cs-stat-label">Sites Live</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">↑</span>
+        <span class="cs-stat-label">Formally Adopted</span>
+      </div>
+    </div>
+    <p class="cs-text">The tool is now the standard method for station health reporting across all 4 sites. Ops and RME teams can see the full health picture in seconds — not hours.</p>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Tools Used</div>
+    <div class="cs-tools">
+      <span class="cs-tool">JavaScript</span>
+      <span class="cs-tool">CSS</span>
+      <span class="cs-tool">Tampermonkey</span>
+      <span class="cs-tool">SharePoint</span>
+      <span class="cs-tool">Power Automate</span>
+      <span class="cs-tool">REST APIs</span>
+      <span class="cs-tool">Slack</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- BACK -->
+<div class="cs-back-wrap">
+  <a href="/#projects" class="cs-back">← Back to work</a>
+</div>
+
+<footer>
+  <span class="ft">© 2025 Marcolius Angjaya</span>
+  <span class="ft">Built with intent.</span>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>

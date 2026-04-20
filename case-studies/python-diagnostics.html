@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performance Diagnostics &amp; Recovery — Marcolius Angjaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Schibsted+Grotesk:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<canvas id="grid-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <a href="/" class="nav-logo">MA</a>
+  <div class="nav-links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#projects">Work</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="cs-tag">Amazon Robotics · Python · Data · 2025</div>
+  <h1 class="cs-title">Performance Diagnostics &amp; Recovery</h1>
+  <p class="cs-meta">Amazon Robotics &nbsp;·&nbsp; Product Launch Engineer &nbsp;·&nbsp; 2025</p>
+  <p class="cs-intro">How I spotted a 5% performance decline that no dashboard flagged, traced it to its root cause, automated the detection pipeline, and recovered 2 units per hour of lost throughput — 3 weeks before the standard tooling would have noticed.</p>
+</section>
+
+<!-- CONTENT -->
+<div class="cs-content">
+
+  <!-- SITUATION -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Situation</div>
+    <p class="cs-text">Robot station performance at one of our fulfillment sites began declining. Standard dashboards — the ones everyone relied on — <strong>showed nothing unusual</strong>. The decline was subtle but real, and it was costing throughput. The absence of an alert wasn't the same as the absence of a problem.</p>
+  </section>
+
+  <!-- TASK -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Task</div>
+    <p class="cs-text">Identify the <strong>root cause of the performance drop</strong>, build tooling to surface it faster in the future, and recover the lost output.</p>
+  </section>
+
+  <!-- ACTION -->
+  <section class="cs-section reveal">
+    <div class="cs-label">What I Did</div>
+    <ol class="cs-steps">
+      <li class="cs-step">
+        <span class="cs-step-num">01</span>
+        <div class="cs-step-body"><strong>Spotted the signal others missed.</strong> By correlating station health data, configuration change logs, and operational metrics manually in Python, I identified a 5% performance decline that hadn't triggered any standard alerts. The signal was real — just invisible to the existing dashboards.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">02</span>
+        <div class="cs-step-body"><strong>Root-caused the issue.</strong> Traced the decline to a configuration change that had quietly degraded pick rates across a subset of stations. Cross-referenced with maintenance logs to confirm the correlation and rule out confounders.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">03</span>
+        <div class="cs-step-body"><strong>Built a diagnostic pipeline.</strong> Automated the data extraction and correlation process in Python. What previously required 5 hours of manual work each week now runs in 30 minutes — and flags anomalies that the standard dashboards miss.</div>
+      </li>
+      <li class="cs-step">
+        <span class="cs-step-num">04</span>
+        <div class="cs-step-body"><strong>Drove the fix.</strong> Worked with engineering and ops to correct the configuration. Monitored recovery using the new pipeline to confirm that UPH returned to baseline — and stayed there.</div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- RESULT -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Result</div>
+    <div class="cs-stats">
+      <div class="cs-stat">
+        <span class="cs-stat-num">5h→30m</span>
+        <span class="cs-stat-label">Weekly Extraction</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">2 UPH</span>
+        <span class="cs-stat-label">Recovered</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">3 wks</span>
+        <span class="cs-stat-label">Earlier Than Dashboards</span>
+      </div>
+    </div>
+    <p class="cs-text">The diagnostic pipeline continues to run weekly. It's now the first place the team looks when performance trends deviate — before any alert fires.</p>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="cs-section reveal">
+    <div class="cs-label">Tools Used</div>
+    <div class="cs-tools">
+      <span class="cs-tool">Python</span>
+      <span class="cs-tool">Internal APIs</span>
+      <span class="cs-tool">Data Pipelines</span>
+      <span class="cs-tool">Cross-functional Coordination</span>
+    </div>
+  </section>
+
+</div>
+
+<!-- BACK -->
+<div class="cs-back-wrap">
+  <a href="/#projects" class="cs-back">← Back to work</a>
+</div>
+
+<footer>
+  <span class="ft">© 2025 Marcolius Angjaya</span>
+  <span class="ft">Built with intent.</span>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>
