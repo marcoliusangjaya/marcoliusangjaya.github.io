@@ -188,6 +188,11 @@ const resumeFrame = document.getElementById('resume-frame');
 
 function openResume() {
   if (!resumeModal) return;
+  // Mobile browsers can't embed PDFs in iframes — open directly in native viewer
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    window.open('assets/resume.pdf', '_blank');
+    return;
+  }
   if (resumeFrame && !resumeFrame.src) resumeFrame.src = 'assets/resume.pdf';
   resumeModal.classList.add('open');
   document.body.style.overflow = 'hidden';
