@@ -116,7 +116,7 @@ nav.nav-scrolled { transform: translateY(-100%); }
 
 .nav-logo {
   font-family: var(--mono);
-  font-size: .78rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: .2em;
   color: var(--accent);
@@ -473,6 +473,7 @@ section, .stats, .about, .projects, .contact, footer { position: relative; z-ind
 .contact-heading span { color: var(--accent); }
 .contact-sub { font-family: var(--mono); font-size: clamp(.6rem, 1.5vw, .76rem); color: var(--muted2); margin-bottom: 3rem; letter-spacing: .08em; }
 .contact-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.contact-btns .btn { width: 160px; justify-content: center; }
 .contact-email { font-family: var(--mono); font-size: .7rem; color: var(--muted); }
 .contact-email a { color: var(--accent); text-decoration: none; }
 .contact-email a:hover { text-decoration: underline; }
